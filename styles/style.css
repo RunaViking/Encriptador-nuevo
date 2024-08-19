@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.complete__work {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #f8f8ea;
+}
+
+.logo {
+  position: relative;
+  width: 12%;
+  height: 9%;
+  left: 7.5%;
+  top: 23px;
+}
+
+.text {
+  position: absolute;
+  width: 42%;
+  height: 60%;
+  left: 12%;
+  top: 15%;
+  border: none;
+  resize: none;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  background-color: transparent;
+  color: #0a3871;
+}
+
+.text::placeholder {
+  color: #0a3871;
+}
+
+.text:focus,
+.text:active {
+  border: none;
+  outline: none;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0%;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 80%;
+}
+
+.information p {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 150%;
+  color: #495057;
+  opacity: 0.8;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.buttoms {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1% 0;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 82%;
+  gap: 10px;
+}
+
+.btn__encript {
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-family: "inter";
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.btn__desencript {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2%;
+  gap: 8%;
+  width: 25%;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-family: "inter";
+  font-size: 1rem;
+  text-align: center;
+  color: #0a3871;
+}
+
+.btn__encript:hover {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  transition: 0.3s;
+}
+
+.btn__desencript:hover {
+  background-color: #0a3871;
+  color: white;
+  transition: 0.3s;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 30%;
+  height: 90%;
+  left: 60%;
+  top: 5%;
+  background: #ffffff;
+  border-radius: 32px;
+}
+
+.msg__result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16px;
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  text-align: center;
+}
+
+.msg__result h2 {
+  width: 60%;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  text-align: center;
+}
+
+.msg__result p {
+  width: 80%;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+}
+
+.result img {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 15%;
+}
+
+.footer {
+  background: #f8f8ea;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: 40%;
+  font-family: "inter";
+  font-size: 0.8rem;
+}
+
+.footer p {
+  text-align: center;
+  color: #0a3871;
+}
+
+@media (max-width: 57.7em) {
+  .logo {
+    width: 2rem;
+    height: 1rem;
+    left: 1%;
+    top: 2%;
+  }
+
+  .complete__work {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section__encript {
+    width: 100%;
+  }
+
+  .text {
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 5%;
+  }
+
+  .information {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+
+  .information p {
+    font-size: 1rem;
+  }
+
+  .buttoms {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+
+  .btn__encript,
+  .btn__desencript {
+    width: 48%;
+    border-radius: 16px;
+  }
+
+  .btn__encript:hover,
+  .btn__desencript:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+
+  .result {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+
+  .msg__result {
+    width: 100%;
+    top: 5%;
+  }
+  .result img {
+    top: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .footer {
+    top: 0;
+    padding: 0;
+  }
+}

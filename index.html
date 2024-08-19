@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="/imagenes/phone-4636846_1280.ico">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Encriptador </title>
+</head>
+
+<body>
+
+    <div class="complete__work">
+        <img src="/imagenes/Logo.png" alt="Logo Alura" class="logo">
+        <div class="section__encript">
+            <textarea name="text" id="text" class="text" cols="30" rows="10"
+                placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="information">
+            <img src="/imagenes/bi_exclamation-circle-fill.png" alt="">
+            <p> Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="buttoms">
+            <button class="btn__encript" type="button" onclick="encript()"> Encriptar</button>
+            <button class="btn__desencript" type="button" onclick="desencript()"> Desencriptar</button>
+        </div>
+        <div class="result">
+            <img src="/imagenes/Muñeco.png" alt="" id="img__result">
+            <div class="msg__result" id="msg__result">
+                <h2 id="message__title">Ningún mensaje fue encontrado</h2>
+                <p id="paragraph">Ingrese el texto que desee encriptar o desencriptar</p>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Gracias a Alura Latam y a todos los que hicieron posible<br> la realización de este
+            proyecto. </p>
+    </footer>
+</body>
+<script src="/logica.js"></script>
+
+</html>
