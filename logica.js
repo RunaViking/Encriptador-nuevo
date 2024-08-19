@@ -20,7 +20,7 @@ function encript() {
     .replace(/o/gi, "ober")
     .replace(/u/gi, "ufat");
 
-  if ((texto.length != 0, texto == info, texto == texto.toLowerCase())) {
+  if (texto.length != 0) {
     document.getElementById("text").value = textoCifrado;
     tituloMensaje.textContent = "El texto se ha encriptado";
     parrafo.textContent = "";
@@ -32,7 +32,7 @@ function encript() {
 
     swal({
       title: "Inténtelo de nuevo",
-      text: "El texto debe ser sin acentos",
+      text: "Ingrese un texto",
       icon: "/imagenes/icon-6026650_1280.png",
       buttons: "Aceptar",
     });
@@ -89,7 +89,7 @@ function desencript() {
     .replace(/ober/gi, "o")
     .replace(/ufat/gi, "u");
 
-  if ((texto.length != 0, texto == info, texto == texto.toLowerCase())) {
+  if (texto.length != 0) {
     document.getElementById("text").value = textoCifrado;
     tituloMensaje.textContent = "El texto se ha desencriptado";
     parrafo.textContent = "";
